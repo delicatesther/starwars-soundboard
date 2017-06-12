@@ -1,6 +1,5 @@
 $(document).ready(function(){
   setStarTimer();
-  createShootingStar();
 });
 
 function setStarTimer() {
@@ -11,6 +10,7 @@ function setStarTimer() {
       clearInterval(timer);
     }
     generateStar();
+    createShootingStar();
   }, 1000);
 }
 
@@ -19,12 +19,13 @@ function generateStar() {
   // var colourClass = ["Star-orange", "Star-pink", "Star-purple", "Star-green"];
   var sizeClass = ["xsmall", "small", "medium", "large"];
   var randomSize = sizeClass[Math.floor(Math.random() * sizeClass.length)];
+
   $('.js-star-generator').append(new Star(randomSize));
 };
 
 function createShootingStar() {
   var star = $('.star');
-  var rand = Math.floor(Math.random() * star.length);
+  var rand = Math.floor(Math.random() * 3)  +1;
   star.eq(rand).addClass('shooting');
 }
 
