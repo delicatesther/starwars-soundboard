@@ -5,7 +5,7 @@ Table top game X-wing needs some proper Star Wars sound effect to triple the fun
 Grabbed from YouTube account [Star Wars Video Game Sounds](https://www.youtube.com/channel/UC6Pi3JvzHSLCjdsITtoJWRg)
 
 ## Credits
-The original setup (folder structure, sprite generation, gulp file, etc) are all courtesy of the wonderful FE developers at Emakina.
+The original setup (folder structure, sprite generation, gulp file, etc) are all courtesy of the wonderful FE developers at [Emakina NL](https://emakina.nl/).
 
 * Patrick Hok-a-hin
 * Stefan Lemaire

@@ -25,7 +25,7 @@ function generateStar() {
 
 function createShootingStar() {
   var star = $('.star');
-  var rand = Math.floor(Math.random() * 3)  +1;
+  var rand = Math.floor(Math.random() * 3)  + 1;
   star.eq(rand).addClass('shooting');
 }
 
