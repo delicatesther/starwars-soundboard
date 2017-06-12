@@ -1,0 +1,89 @@
+
+These are the folders and subfolders
+in this pack, if you'd like to see
+them from a certain point of view.
+
+It should give you a better rundown
+of what's included. Main folders are
+fully capitalized.
+
+
+
+CHARACTERS
+  > Darth Vader
+  > Garindan
+  > Greedo
+  > Luke Skywalker
+
+CREATURES
+  > Aqualish
+  > Bantha
+  > Dianoga
+  > Ewok
+  > Gamorrean
+  > Generic
+  > Gran
+  > Jawa
+  > Mynock
+  > Rancor Beast
+  > Sarlacc
+  > Space Slug
+  > Tauntaun
+  > Tusken Raider
+  > Ugnaught
+  > Wampa
+  > Womp Rat
+  > Wookiee
+
+DROIDS
+  > BB-8
+  > C-3PO
+  > Destroyer Droid
+  > Gonk Droid
+  > Probe Droid
+  > R2-D2
+  > Rat Droid
+  > Remote Droid
+
+FILM QUOTES
+
+FORCE POWERS
+
+IMPACTS AND EXPLOSIONS
+  > Laser Rics
+  > Projectile Rics
+
+TECH
+  > Beeps and Telemetry
+  > Doors and Moving Structures
+
+VEHICLES
+  > A-wing and B-wing
+  > Cloud Car
+  > Corellian Corvette
+  > Generic
+  > Imperial Shuttle
+  > Imperial Walkers
+      > AT-AT
+      > AT-ST
+  > Jedi Starfighter
+  > Landspeeder
+  > Medium Transport
+  > Millennium Falcon
+  > Naboo Starfighter
+  > Slave I
+  > Snowspeeder
+  > Speederbike
+  > Star Destroyer
+  > T-16 Skyhopper
+  > TIE Fighter
+  > X-wing
+  > Y-wing
+
+WEAPONS AND TOOLS
+  > Blasters and Cannons
+  > Lightsabers
+  > Tools
+  > Warheads and Explosives
+
+WILHELM SCREAMS

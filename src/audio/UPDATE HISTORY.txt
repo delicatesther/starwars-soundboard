@@ -1,0 +1,12 @@
+Version 1.0  (Feb. 23, 2017)
+*Original release
+
+Version 1.01 (Feb. 23, 2017)
+*Fixed several sounds that
+were somehow broken
+
+Version 2.0  (May 30, 2017)
+*Added 1765 new sound effects
+in several new categories,
+organized several sound effects
+across multiple categories

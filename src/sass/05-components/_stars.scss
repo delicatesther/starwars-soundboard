@@ -1,0 +1,26 @@
+.star {
+  border-radius: 50%;
+  display: block;
+  width: 1px;
+  height: 1px;
+  margin: 5px;
+  position: absolute;
+  background: $white;
+
+  &.xsmall {
+    width: 1px;
+    height: 1px;
+  }
+  &.small {
+    width: 2px;
+    height: 2px;
+  }
+  &.medium {
+    width: 3px;
+    height: 3px;
+  }
+  &.large {
+    width: 4px;
+    height: 4px;
+  }
+}

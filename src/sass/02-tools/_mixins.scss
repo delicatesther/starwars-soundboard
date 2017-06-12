@@ -1,0 +1,49 @@
+/*==============================================================================
+Clearfix
+==============================================================================*/
+@mixin clearfix() {
+	*zoom: 1;
+
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+/*==============================================================================
+Font smoothing
+==============================================================================*/
+@mixin font-smoothing ($val: antialiased) {
+	-webkit-font-smoothing: $val;
+	-moz-font-smoothing: $val;
+	-ms-font-smoothing: $val;
+	-o-font-smoothing: $val;
+}
+
+/*==============================================================================
+Breakpoints
+==============================================================================*/
+$breakpoints: (
+	xs: 360px,
+	s: 600px,
+  m: 767px,
+  l: 1001px,
+  xl: 1025px,
+  xxl: 1440px
+);
+
+@mixin mq($name) {
+  @if not map-has-key($breakpoints, $name) {
+	@warn "Warning: `#{$name}` is not a valid breakpoint name.";
+  }
+  @else {
+	@media screen and (min-width: map-get($breakpoints, $name)) {
+	  @content;
+	 }
+  }
+}
