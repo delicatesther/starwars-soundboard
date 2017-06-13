@@ -169,6 +169,8 @@ gulp.task('browserSync', function() {
 
 gulp.task('build', function(callback) {
   runSequence('spritePng','iconfont','spriteSvg','css', 'js', callback);
+  gulp.src(paths.css.src + "/vendor/**.*")
+  .pipe(gulp.dest(paths.css.dest + "/vendor/"))
   gulp.src(paths.fonts.src + "**.*")
   .pipe(gulp.dest(paths.fonts.dest))
   gulp.src(paths.images.src + "**.*")

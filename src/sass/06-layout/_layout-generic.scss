@@ -27,26 +27,55 @@
   text-align: center;
   width: 100%;
   max-width: 50%;
-
-  &.empire::before {
+    @include mq(l) {
+      text-align: left;
+    }
+  &:first-of-type {
+    margin-bottom: 50px;
+  }
+  &:before {
     content: "";
     position: relative;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    @include mq(l) {
+      left: auto;
+      transform: none;
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 40px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &.empire:before {
     background: url('../img/images/galactic-empire.svg');
     background-size: contain;
   }
-  &.rebels::before {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
+  &.rebels:before {
     background: url('../img/images/rebel-alliance.svg');
     background-size: contain;
   }
-  img {
-    max-height: 150px;
+  span {
+    display: block;
+    @include mq(l) {
+      display: inline-block;
+    }
   }
+  img {
+    max-height: 80px;
+    @include mq(l) {
+      max-height: 150px;
+    }
+  }
+}
+.container-xwing-icons {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0;
+
 }

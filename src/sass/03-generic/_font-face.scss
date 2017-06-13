@@ -39,3 +39,24 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'x-wing-ships';
+  src: url('../fonts/x-wing-ships.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/x-wing-ships.woff') format('woff'),
+       url('../fonts/x-wing-ships.ttf')  format('truetype'),
+       url('../fonts/x-wing-ships.svg#x-wing-ships') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Xwing';
+  src: url('../fonts/xwing-miniatures.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/xwing-miniatures.woff') format('woff'),
+       url('../fonts/xwing-miniatures.ttf')  format('truetype'),
+       url('../fonts/xwing-miniatures.svg#xwing-miniatures') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

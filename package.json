@@ -31,6 +31,10 @@
     "gulp": "gulp build"
   },
   "paths": {
+      "css" : {
+        "src"             : "src/css",
+        "dest"            : "dest/css"
+      },
       "sass": {
         "src"             : "src/sass/",
         "dest"            : "dest/css/"
