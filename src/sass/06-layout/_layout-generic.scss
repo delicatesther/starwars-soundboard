@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: flex;
   height: 100vh;
 }
 
@@ -33,7 +34,19 @@
     display: inline-block;
     width: 100px;
     height: 100px;
+    background: url('../img/images/galactic-empire.svg');
+    background-size: contain;
+  }
+  &.rebels::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
     background: url('../img/images/rebel-alliance.svg');
     background-size: contain;
+  }
+  img {
+    max-height: 150px;
   }
 }
