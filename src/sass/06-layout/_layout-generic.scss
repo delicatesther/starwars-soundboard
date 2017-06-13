@@ -6,7 +6,6 @@
   color: $white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
   animation: background-move 90s ease infinite;
   animation-direction: alternate;
@@ -18,36 +17,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
-  height: 100vh;
+  max-width: 100%;
+  min-width: 300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
+.container-ship {
+  padding: 15px;
+}
 .container-team {
-  text-align: center;
-  width: 100%;
-  max-width: 50%;
-    @include mq(l) {
-      text-align: left;
-    }
+  position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 15px 15px;
+    border-radius: 10px;
+    border: 1px solid $white;
+  @include mq(l) {
+    padding: 140px 15px 15px;
+  }
   &:first-of-type {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   &:before {
     content: "";
-    position: relative;
-    display: block;
+    position: absolute;
     width: 60px;
     height: 60px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20px;
     @include mq(l) {
-      left: auto;
-      transform: none;
-      display: inline-block;
-      margin-bottom: 0;
-      margin-right: 40px;
       width: 100px;
       height: 100px;
     }
@@ -62,8 +66,9 @@
   }
   span {
     display: block;
-    @include mq(l) {
-      display: inline-block;
+     @include mq(l) {
+        float: left;
+        margin-top: 30px;
     }
   }
   img {
@@ -74,8 +79,21 @@
   }
 }
 .container-xwing-icons {
-  display: inline-block;
   margin-left: 0;
   padding-left: 0;
+   @include mq(l) {
+    float: right;
+  }
+}
 
+.xwing-logo {
+  display: none;
+  @include mq(m) {
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 150px;
+    height: auto;
+  }
 }

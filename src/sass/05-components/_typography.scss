@@ -1,12 +1,15 @@
 h1, h2, h3 {
-  font-family: $base-font--1;
+  font-family: $base-font--2;
   font-size: 24px;
+  letter-spacing: 7px;
   @include mq(m) {
     font-size: 48px;
   }
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .sw-icon {
   font-family: $base-font--3;
@@ -16,9 +19,9 @@ ul {
   }
 }
 .xwing-icon {
-  font-family: $base-font--4;
-  font-size: 30px;
+  font-size: 24px;
   display: block;
   text-align: center;
+  cursor: pointer;
 
 }
