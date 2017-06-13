@@ -3,7 +3,7 @@ Table top game X-wing needs some proper Star Wars sound effect to triple the fun
 
 ## Install
 ```
-npm Install
+npm install
 ```
 
 ## Development
@@ -33,4 +33,4 @@ The original setup (folder structure, sprite generation, gulp file, etc) are all
 Grabbed from YouTube account [Star Wars Video Game Sounds](https://www.youtube.com/channel/UC6Pi3JvzHSLCjdsITtoJWRg)
 
 ### X-wing specific assets
-I grabbed X-wing assets made by [geordanr](http://geordanr.github.io/xwing), especially his webfont was especially useful.
+I grabbed X-wing assets made by [geordanr](http://geordanr.github.io/xwing), especially the [webfont](https://github.com/geordanr/xwing-miniatures-font) created by [Hinny](https://github.com/Hinny) and [armoredgear7](https://github.com/armoredgear7) was especially useful.
