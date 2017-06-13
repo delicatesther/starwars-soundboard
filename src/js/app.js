@@ -1,5 +1,6 @@
 $(document).ready(function(){
   setStarTimer();
+  properDirection();
 });
 
 function setStarTimer() {
@@ -22,6 +23,13 @@ function generateStar() {
 
   $('.js-star-generator').append(new Star(randomSize));
 };
+
+function properDirection() {
+  var redDot = $('#redDot');
+
+    var tween = TweenMax.to(redDot, 1, {transform: "perspective(500px) translate3D(0,0, 100px)"});
+
+}
 
 function createShootingStar() {
   var star = $('.star');
