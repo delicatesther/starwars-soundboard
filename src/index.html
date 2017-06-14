@@ -6,54 +6,62 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Star Wars X-Wing Sound Effects">
   <!-- <meta property="og:image" content="http://dtrh.delicatesther.nl/dest/img/images/meta-image.jpg" /> -->
-  <link rel="stylesheet" href="dest/css/vendor/xwing-miniatures.css" type="text/css">
-  <link rel="stylesheet" href="dest/css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/vendor/xwing-miniatures.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-  <script src="dest/js/app.js"></script>
+  <script src="js/app.js"></script>
   <title>Star Wars X-Wing Sound Effects</title>
 </head>
 <body class="body">
   <header class="header"><h1>Star Wars Sound Effects</h1></header>
   <ul class="js-star-generator container-stars"></ul>
-  <div id="redDot" class="red-dot"></div>
   <div class="container-main">
     <div class="container-team empire">
       <div class="container-ship">
-      <span class="sw-icon"><img src="dest/img/images/imperial-cruiser.svg"></span>
+      <span class="sw-icon"><i class="xwing-miniatures-ship xwing-miniatures-ship-tiefofighter"></i></span>
         <ul class="container-xwing-icons">
-          <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-agility"></i></li>
-          <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-targetlock"></i></li>
-          <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-attack"></i></li>
-          <li class="xwing-icon xwing-damage"><i class="xwing-miniatures-font xwing-miniatures-font-hit"></i></li>
-          <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-crit"></i></li>
+          <li class="xwing-icon" data-key="65"><i class="xwing-miniatures-font xwing-miniatures-font-agility"></i><sup>A</sup></li>
+          <li class="xwing-icon" data-key="84"><i class="xwing-miniatures-font xwing-miniatures-font-targetlock"><sup>T</sup></i></li>
+          <li class="xwing-icon" data-key="70"><i class="xwing-miniatures-font xwing-miniatures-font-attack"></i><sup>F</sup></li>
+          <li class="xwing-icon" data-key="68"><i class="xwing-miniatures-font xwing-miniatures-font-hit"></i><sup>D</sup></li>
+          <li class="xwing-icon" data-key="69"><i class="xwing-miniatures-font xwing-miniatures-font-crit"></i><sup>E</sup></li>
         </ul>
       </div>
     </div>
 
     <div class="container-team rebels">
       <div class="container-ship">
-        <span class="sw-icon">x  </span>
+        <span class="sw-icon"><i class="xwing-miniatures-ship xwing-miniatures-ship-xwing"></i></span>
           <ul class="container-xwing-icons">
             <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-agility"></i></li>
             <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-targetlock"></i></li>
             <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-attack"></i></li>
             <li class="xwing-icon xwing-damage"><i class="xwing-miniatures-font xwing-miniatures-font-hit"></i></li>
-            <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-crit"></i></li>
+            <li class="xwing-icon" data-key="73"><i class="xwing-miniatures-font xwing-miniatures-font-crit"></i><sup>I</sup></li>
           </ul>
       </div>
       <div class="container-ship">
-      <span class="sw-icon">f</span>
+      <span class="sw-icon"><i class="xwing-miniatures-ship xwing-miniatures-ship-yt1300"></i></span>
         <ul class="container-xwing-icons">
           <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-agility"></i></li>
           <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-targetlock"></i></li>
           <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-attack"></i></li>
           <li class="xwing-icon xwing-damage"><i class="xwing-miniatures-font xwing-miniatures-font-hit"></i></li>
-          <li class="xwing-icon"><i class="xwing-miniatures-font xwing-miniatures-font-crit"></i></li>
+          <li class="xwing-icon" data-key="67"><i class="xwing-miniatures-font xwing-miniatures-font-crit"></i><sup>C</sup></li>
         </ul>
       </div>
     </div>
-    <img src="dest/img/images/logo-SWX01.png" alt="Star Wars X-Wing Miniature Game" class="xwing-logo">
   </div>
+  <audio data-key="65" src="audio/Vehicles/TIE-Fighter/TIE-Flyby-1.wav"></audio>
+  <audio data-key="84" src="audio/Film-Quotes/I-Have-You-Now.wav"></audio>
+  <audio data-key="70" src="audio/Weapons-and-Tools/Blasters-and-Cannons/TIE-Laser-1A.wav"></audio>
+  <audio data-key="69" src="audio/Impacts-and-Explosions/TIE-EXPL-6.wav"></audio>
+  <audio data-key="68" src="audio/Impacts-and-Explosions/Metallic-Impact-1.wav"></audio>
+  <audio data-key="73" src="audio/Impacts-and-Explosions/Bright-Explosion-1.wav"></audio>
+  <audio data-key="67" src="audio/Impacts-and-Explosions/Bright-Explosion-1.wav"></audio>
+  <footer>
+    <img src="img/images/logo-SWX01.png" alt="Star Wars X-Wing Miniature Game" class="xwing-logo">
+  </footer>
 </body>
 </html>

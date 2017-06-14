@@ -1,3 +1,6 @@
+body {
+  font-family: $base-font--5;
+}
 h1, h2, h3 {
   font-family: $base-font--2;
   font-size: 24px;
@@ -12,16 +15,37 @@ ul {
   padding: 0;
 }
 .sw-icon {
-  font-family: $base-font--3;
-  font-size: 50px;
-  @include mq(m) {
-    font-size: 80px;
-  }
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-size: 100px;
+  line-height: 100px;
 }
 .xwing-icon {
   font-size: 24px;
   display: block;
   text-align: center;
   cursor: pointer;
-
+  transition: all 0.2s;
+  border: 1px solid $white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 7px 0;
+  padding: 10px;
+  position: relative;
+  &.playing {
+    transform: scale(1.1);
+    border-color: $red;
+    box-shadow: 0 0 1rem $red;
+  }
+  &.notransition {
+    transition: none !important;
+  }
+  sup {
+    position: absolute;
+    right: -10px;
+    font-family: $base-font--5;
+    font-size: 16px;
+  }
 }

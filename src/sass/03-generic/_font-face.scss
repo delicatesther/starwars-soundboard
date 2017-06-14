@@ -20,28 +20,19 @@
 
 
 @font-face {
-  font-family: 'GalaxyFarFarAway';
-  src: url('../fonts/GalaxyFarFarAway.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/GalaxyFarFarAway.woff') format('woff'),
-       url('../fonts/GalaxyFarFarAway.ttf')  format('truetype'),
-       url('../fonts/GalaxyFarFarAway.svg#GalaxyFarFarAway') format('svg');
+  font-family: 'EurostileLTStd-Cn';
+  src: url('../fonts/EurostileLTStd-Cn.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/EurostileLTStd-Cn.otf')  format('opentype'),
+	     url('../fonts/EurostileLTStd-Cn.woff') format('woff'), 
+       url('../fonts/EurostileLTStd-Cn.ttf')  format('truetype'), 
+       url('../fonts/EurostileLTStd-Cn.svg#EurostileLTStd-Cn') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'x-wing-symbols';
-  src: url('../fonts/x-wing-symbols.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/x-wing-symbols.woff') format('woff'),
-       url('../fonts/x-wing-symbols.ttf')  format('truetype'),
-       url('../fonts/x-wing-symbols.svg#x-wing-symbols') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'x-wing-ships';
+  font-family: 'XWingShip';
   src: url('../fonts/x-wing-ships.eot?#iefix') format('embedded-opentype'),
        url('../fonts/x-wing-ships.woff') format('woff'),
        url('../fonts/x-wing-ships.ttf')  format('truetype'),

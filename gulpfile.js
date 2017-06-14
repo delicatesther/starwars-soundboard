@@ -147,9 +147,9 @@ gulp.task('spriteSvg', function () {
 
 gulp.task('js', function() {
   return gulp.src(paths.js.src + "app.js")
-  .pipe(uglify(
-
-  ))
+  // .pipe(uglify(
+  //
+  // ))
   .pipe(gulp.dest(paths.js.dest))
 })
 
@@ -169,17 +169,25 @@ gulp.task('browserSync', function() {
 
 gulp.task('build', function(callback) {
   runSequence('spritePng','iconfont','spriteSvg','css', 'js', callback);
+
+  gulp.src("src/index.html")
+  .pipe(gulp.dest("dest"))
+
   gulp.src(paths.css.src + "/vendor/**.*")
   .pipe(gulp.dest(paths.css.dest + "/vendor/"))
+
   gulp.src(paths.fonts.src + "**.*")
   .pipe(gulp.dest(paths.fonts.dest))
+
   gulp.src(paths.images.src + "**.*")
   .pipe(gulp.dest(paths.images.dest))
-  gulp.src(paths.audio.src + "**.*")
+
+  gulp.src(paths.audio.src + "**/**.*")
   .pipe(gulp.dest(paths.audio.dest))
 });
 
 gulp.task('default',function() {
+  gulp.watch("src/index.html", ['build']);
   gulp.watch(paths.sass.src + '**/*.scss',['build']);
   gulp.watch(paths.js.src + "app.js", ['build']);
 });
