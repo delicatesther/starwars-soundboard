@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="js/vendor/modernizr-custom.js"></script>
   <script src="js/app.js"></script>
   <title>Star Wars X-Wing Sound Effects</title>
 </head>
@@ -21,82 +22,85 @@
 
       <!--TIE FIGHTER-->
       <div class="container-ship">
-      <span class="sw-icon"><i class="xwing-miniatures-ship xwing-miniatures-ship-tiefofighter"></i></span>
+        <span class="sw-icon"><i class="xwing-miniatures-ship xwing-miniatures-ship-tiefofighter"></i></span>
         <ul class="container-xwing-icons">
-          <li class="xwing-icon xwing-icon-empire" data-key="81">
-            <i class="xwing-miniatures-font xwing-miniatures-font-agility"></i>
-            <sup>Q</sup>
+          <li class="xwing-icon xwing-icon-empire" data-key="81" id="btn1">
+              <i class="xwing-miniatures-font xwing-miniatures-font-agility"></i>
+              <sup>Q</sup>
           </li>
-          <li class="xwing-icon xwing-icon-empire" data-key="87">
-            <i class="xwing-miniatures-font xwing-miniatures-font-targetlock">
-              <sup>W</sup></i>
+          <li class="xwing-icon xwing-icon-empire" data-key="87" id="btn2">
+              <i class="xwing-miniatures-font xwing-miniatures-font-targetlock">
+                <sup>W</sup></i>
             </li>
-          <li class="xwing-icon xwing-icon-empire" data-key="69">
-            <i class="xwing-miniatures-font xwing-miniatures-font-attack"></i>
-            <sup>E</sup>
-          </li>
-          <li class="xwing-icon xwing-icon-empire" data-key="82">
-            <i class="xwing-miniatures-font xwing-miniatures-font-hit"></i>
-            <sup>R</sup>
-          </li>
-          <li class="xwing-icon xwing-icon-empire" data-key="84">
-            <i class="xwing-miniatures-font xwing-miniatures-font-crit"></i>
-            <sup>T</sup>
-          </li>
-        </ul>
+            <li class="xwing-icon xwing-icon-empire" data-key="69" id="btn3">
+                <i class="xwing-miniatures-font xwing-miniatures-font-attack"></i>
+                <sup>E</sup>
+            </li>
+            <li class="xwing-icon xwing-icon-empire" data-key="82" id="btn4">
+                <i class="xwing-miniatures-font xwing-miniatures-font-hit"></i>
+                <sup>R</sup>
+            </li>
+            <li class="xwing-icon xwing-icon-empire" data-key="84" id="btn5">
+                <i class="xwing-miniatures-font xwing-miniatures-font-crit"></i>
+                <sup>T</sup>
+            </li>
+          </ul>
+        </div>
+
       </div>
-    </div>
 
     <div class="container-team rebels">
 
       <!--X-WING-->
       <div class="container-ship">
-        <span class="sw-icon"><i class="xwing-miniatures-ship xwing-miniatures-ship-xwing"></i></span>
+        <span class="sw-icon">
+          <i class="xwing-miniatures-ship xwing-miniatures-ship-xwing"></i></span>
           <ul class="container-xwing-icons">
-            <li class="xwing-icon xwing-icon-rebels" data-key="89">
-              <i class="xwing-miniatures-font xwing-miniatures-font-agility"></i>
-              <sup>Y</sup>
+            <li class="xwing-icon xwing-icon-rebels" data-key="89" id="btn6">
+                <i class="xwing-miniatures-font xwing-miniatures-font-agility"></i>
+                <sup>Y</sup>
             </li>
-            <li class="xwing-icon xwing-icon-rebels" data-key="85">
-              <i class="xwing-miniatures-font xwing-miniatures-font-targetlock"></i>
-              <sup>U</sup>
+            <li class="xwing-icon xwing-icon-rebels" data-key="85" id="btn7">
+                <i class="xwing-miniatures-font xwing-miniatures-font-targetlock"></i>
+                <sup>U</sup>
             </li>
-            <li class="xwing-icon xwing-icon-rebels" data-key="73">
-              <i class="xwing-miniatures-font xwing-miniatures-font-attack"></i>
-              <sup>I</sup>
+            <li class="xwing-icon xwing-icon-rebels" data-key="73" id="btn8">
+                <i class="xwing-miniatures-font xwing-miniatures-font-attack"></i>
+                <sup>I</sup>
             </li>
-            <li class="xwing-icon xwing-icon-rebels" data-key="79">
-              <i class="xwing-miniatures-font xwing-miniatures-font-hit"></i>
-              <sup>O</sup>
+            <li class="xwing-icon xwing-icon-rebels" data-key="79" id="btn9">
+                <i class="xwing-miniatures-font xwing-miniatures-font-hit"></i>
+                <sup>O</sup>
             </li>
-            <li class="xwing-icon xwing-icon-rebels" data-key="80">
-              <i class="xwing-miniatures-font xwing-miniatures-font-crit"></i>
-              <sup>P</sup>
+            <li class="xwing-icon xwing-icon-rebels" data-key="80" id="btn10">
+                <i class="xwing-miniatures-font xwing-miniatures-font-crit"></i>
+                <sup>P</sup>
+
             </li>
           </ul>
-      </div>
+        </div>
 
       <!--MILLENIUM FALCON-->
       <div class="container-ship">
       <span class="sw-icon"><i class="xwing-miniatures-ship xwing-miniatures-ship-yt1300"></i></span>
         <ul class="container-xwing-icons">
-          <li class="xwing-icon xwing-icon-rebels" data-key="65">
+          <li class="xwing-icon xwing-icon-rebels" data-key="65" id="btn11">
             <i class="xwing-miniatures-font xwing-miniatures-font-agility"></i>
             <sup>A</sup>
           </li>
-          <li class="xwing-icon xwing-icon-rebels" data-key="83">
+          <li class="xwing-icon xwing-icon-rebels" data-key="83" id="btn12">
             <i class="xwing-miniatures-font xwing-miniatures-font-targetlock"></i>
             <sup>S</sup>
           </li>
-          <li class="xwing-icon xwing-icon-rebels" data-key="68">
+          <li class="xwing-icon xwing-icon-rebels" data-key="68" id="btn13">
             <i class="xwing-miniatures-font xwing-miniatures-font-attack"></i>
             <sup>D</sup>
           </li>
-          <li class="xwing-icon xwing-icon-rebels" data-key="68">
+          <li class="xwing-icon xwing-icon-rebels" data-key="68" id="btn14">
             <i class="xwing-miniatures-font xwing-miniatures-font-hit"></i>
             <sup>F</sup>
           </li>
-          <li class="xwing-icon xwing-icon-rebels" data-key="71">
+          <li class="xwing-icon xwing-icon-rebels" data-key="71" id="btn15">
             <i class="xwing-miniatures-font xwing-miniatures-font-crit"></i>
             <sup>G</sup>
           </li>
@@ -107,27 +111,30 @@
   </div>
 
   <!--TIE FIGHTER-->
-  <audio data-key="81" src="audio/Vehicles/TIE-Fighter/TIE-Flyby-1.wav"></audio>
-  <audio data-key="87" src="audio/Tech/Beeps-and-Telemetry/TIE-Target-Comp-4A.wav"></audio>
-  <audio data-key="69" src="audio/Weapons-and-Tools/Blasters-and-Cannons/TIE-Laser-1A.wav"></audio>
-  <audio data-key="84" src="audio/Impacts-and-Explosions/TIE-EXPL-6.wav"></audio>
-  <audio data-key="82" src="audio/Impacts-and-Explosions/Metallic-Impact-1.wav"></audio>
+  <audio data-key="81" id="audio1" src="audio/Vehicles/TIE-Fighter/TIE-Flyby-1.wav"></audio>
+  <audio data-key="87" id="audio2" src="audio/Tech/Beeps-and-Telemetry/TIE-Target-Comp-4A.wav"></audio>
+  <audio data-key="69" id="audio3" src="audio/Weapons-and-Tools/Blasters-and-Cannons/TIE-Laser-1A.wav"></audio>
+  <audio data-key="84" id="audio4" src="audio/Impacts-and-Explosions/TIE-EXPL-6.wav"></audio>
+  <audio data-key="82" id="audio5" src="audio/Impacts-and-Explosions/Metallic-Impact-1.wav"></audio>
 
   <!-- X-WING -->
-  <audio data-key="89" src="audio/Vehicles/X-wing/XW-Flyby-4.wav"></audio>
-  <audio data-key="85" src="audio/Tech/Beeps-and-Telemetry/XW-Target-Comp-1G.wav"></audio>
-  <audio data-key="73" src="audio/Weapons-and-Tools/Blasters-and-Cannons/XW-Laser-5.wav"></audio>
-  <audio data-key="79" src="audio/Impacts-and-Explosions/Metallic-Impact-1.wav"></audio>
-  <audio data-key="80" src="audio/Impacts-and-Explosions/XW-EXPL-2.wav"></audio>
+  <audio data-key="89" id="audio6" src="audio/Vehicles/X-wing/XW-Flyby-4.wav"></audio>
+  <audio data-key="85" id="audio7" src="audio/Tech/Beeps-and-Telemetry/XW-Target-Comp-1G.wav"></audio>
+  <audio data-key="73" id="audio8" src="audio/Weapons-and-Tools/Blasters-and-Cannons/XW-Laser-5.wav"></audio>
+  <audio data-key="79" id="audio9" src="audio/Impacts-and-Explosions/Metallic-Impact-1.wav"></audio>
+  <audio data-key="80" id="audio10" src="audio/Impacts-and-Explosions/XW-EXPL-2.wav"></audio>
 
   <!-- MILLENIUM FALCON -->
-  <audio data-key="65" src="audio/Vehicles/Millenium-Falcon/FALC-Flyby-1A.wav"></audio>
+  <audio data-key="65" id="audio11" src="audio/Vehicles/Millenium-Falcon/FALC-Flyby-1A.wav"></audio>
   <audio data-key="68" src="audio/Weapons-and-Tools/Blasters-and-Cannons/Falcon-Laser-Multi-1A.wav"></audio>
-  <audio data-key="83" src="audio/Tech/Beeps-and-Telemetry/FALC-Telemetry-5A.wav"></audio>
-  <audio data-key="70" src="audio/Tech/Beeps-and-Telemetry/FALC-Alarm-2B.wav"></audio>
-  <audio data-key="71" src="audio/Impacts-and-Explosions/Bright-Explosion-1.wav"></audio>
+  <audio data-key="83" id="audio12" src="audio/Tech/Beeps-and-Telemetry/FALC-Telemetry-5A.wav"></audio>
+  <audio data-key="70" id="audio13" src="audio/Tech/Beeps-and-Telemetry/FALC-Alarm-2B.wav"></audio>
+  <audio data-key="71" id="audio14" src="audio/Impacts-and-Explosions/Bright-Explosion-1.wav"></audio>
 
-  <footer>
+  <footer class="footer">
+    <p class="disclaimer">Displaimer: Star Wars and all intellectual property related to that belong to <a href="http://www.starwars.com/" target="_blank"  title="Visit the official Star Wars website">The Walt Disney Company</a>.
+      X-Wing Miniature Games are a product of <a href="https://www.fantasyflightgames.com" target="_blank" title="Visit the Fantasy Flight Games Website">Fantasy Flight Games</a>, © and ™ <a href="http://lucasfilm.com/" target="_blank" title="Visit Lucasfilm.com">Lucasfilm Ltd</a>. <br>
+      I have no rights to any of those brands, I simply wanted to build a cool page to accompany a fun game. :) Code and credits also available on my <a href="https://github.com/delicatesther/starwars-soundboard" target="_blank" title="Visit my Github page">GitHub page.</p>
     <img src="img/images/logo-SWX01.png" alt="Star Wars X-Wing Miniature Game" class="xwing-logo">
   </footer>
 </body>

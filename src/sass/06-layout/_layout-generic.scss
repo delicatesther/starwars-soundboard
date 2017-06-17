@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: space-between;
   display: flex;
+  flex-grow: 1;
   max-width: 100%;
   min-width: 300px;
   position: relative;
@@ -31,15 +32,17 @@
 }
 .container-ship {
   padding: 15px;
+  margin: 0 auto;
 }
 .container-team {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 100px 15px 15px;
   border-radius: 10px;
   border: 1px solid $white;
+  min-width: 300px;
   @include mq(m) {
     padding: 140px 15px 15px;
   }
@@ -70,7 +73,7 @@
   }
   span {
     display: block;
-     @include mq(m) {
+     @include mq(s) {
         float: left;
         margin: 30px 15px 0;
     }
@@ -87,17 +90,5 @@
   padding-left: 0;
    @include mq(l) {
     float: right;
-  }
-}
-
-.xwing-logo {
-  display: none;
-  @include mq(m) {
-    display: block;
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    width: 150px;
-    height: auto;
   }
 }

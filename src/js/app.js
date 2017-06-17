@@ -5,7 +5,17 @@ $(document).ready(function(){
   var icons = Array.from(document.querySelectorAll('.xwing-icon'));
   icons.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
-  // window.addEventListener('keydown', playSound);
+
+  $('.xwing-icon').click(function(){
+    $(this).addClass('playing');
+    var id = $(this).attr('id').replace(/btn/, '');
+    $('audio[id^="audio"]')[id-1].play();
+  });
+
+  // if (Modernizr.touch){
+  //   $('sup').css('display': 'none');
+  //
+  // };
 
 });
 
@@ -17,6 +27,10 @@ function removeTransition(e) {
 function playSound(e) {
   var audio = $(`audio[data-key="${e.keyCode}"]`).get(0);
   var icon = $(`.xwing-icon[data-key="${e.keyCode}"]`);
+
+  var target = $(this).data('key');
+
+
   if (!audio) return;
 
   icon.addClass('playing');

@@ -172,12 +172,15 @@ gulp.task('build', function(callback) {
   gulp.src(paths.images.src + "**.*")
   .pipe(gulp.dest(paths.images.dest))
 
+  gulp.src(paths.js.src + "vendor/**.*")
+  .pipe(gulp.dest(paths.js.dest  + "/vendor/"))
+
   gulp.src(paths.audio.src + "**/**.*")
   .pipe(gulp.dest(paths.audio.dest))
 });
 
 gulp.task('default',function() {
   gulp.watch("src/index.html", ['build']);
-  gulp.watch(paths.sass.src + '**/*.scss',['css']);
-  gulp.watch(paths.js.src + "app.js", ['js']);
+  gulp.watch(paths.sass.src + '**/*.scss',['build']);
+  gulp.watch(paths.js.src + "app.js", ['build']);
 });
