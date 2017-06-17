@@ -153,16 +153,6 @@ gulp.task('js', function() {
   .pipe(gulp.dest(paths.js.dest))
 })
 
-// run a local server that refreshes automatically on update
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: './'
-    },
-		files: ["src/**/*.scss", "src/**/*.js", "*.html"]
-  })
-})
-
 // make sure tasks run in a sequence
 // possibilities so far:
 // runSequence('spritePng','iconfont','spriteSvg','base64','css', callback);
@@ -188,16 +178,6 @@ gulp.task('build', function(callback) {
 
 gulp.task('default',function() {
   gulp.watch("src/index.html", ['build']);
-  gulp.watch(paths.sass.src + '**/*.scss',['build']);
-  gulp.watch(paths.js.src + "app.js", ['build']);
+  gulp.watch(paths.sass.src + '**/*.scss',['css']);
+  gulp.watch(paths.js.src + "app.js", ['js']);
 });
-
-
-//watch
-// gulp.task('default', ['browserSync', 'css', 'js'], function() {
-// 	//watch .scss files
-// 	gulp.watch(paths.sass.src + "**/*.**", ['css']);
-// 	gulp.watch(paths.js.src + "**/*.**", ['js']);
-// 	gulp.watch('*.html').on('change', browserSync.reload);
-// 	gulp.watch(paths.js.src + "**/*.**");
-// });

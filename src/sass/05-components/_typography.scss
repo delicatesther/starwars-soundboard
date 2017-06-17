@@ -34,10 +34,19 @@ ul {
   margin: 7px 0;
   padding: 10px;
   position: relative;
-  &.playing {
-    transform: scale(1.1);
-    border-color: $red;
-    box-shadow: 0 0 1rem $red;
+  &.xwing-icon-empire {
+    &.playing {
+      transform: scale(1.1);
+      border-color: $red;
+      box-shadow: 0 0 1rem $red;
+    }
+  }
+  &.xwing-icon-rebels {
+    &.playing {
+      transform: scale(1.1);
+      border-color: $blue;
+      box-shadow: 0 0 1rem $blue;
+    }
   }
   &.notransition {
     transition: none !important;

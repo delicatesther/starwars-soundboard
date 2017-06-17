@@ -24,7 +24,6 @@ function playSound(e) {
   audio.play();
 }
 
-
 function setStarTimer() {
   var timesRun = 0;
   var timer =  setInterval(function(){
