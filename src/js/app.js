@@ -1,7 +1,6 @@
 $(document).ready(function(){
   // setStarTimer();
 
-
   var icons = Array.from(document.querySelectorAll('.xwing-icon'));
   icons.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);

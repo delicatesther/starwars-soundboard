@@ -33,9 +33,6 @@ gulp.task('css', function() {
   }))
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(paths.sass.dest))
-  .pipe(browserSync.reload({
-      stream: true
-    }));
 });
 
 //icon fonts
