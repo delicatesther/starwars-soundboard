@@ -2,9 +2,8 @@ body {
   font-family: $base-font--5;
 }
 h1, h2, h3 {
-  font-family: $base-font--2;
+  font-family: $base-font--5;
   font-size: 24px;
-  letter-spacing: 7px;
   @include mq(m) {
     font-size: 48px;
   }

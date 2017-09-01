@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  // setStarTimer();
-
   var icons = Array.from(document.querySelectorAll('.xwing-icon'));
   icons.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
@@ -10,12 +8,6 @@ $(document).ready(function(){
     var id = $(this).attr('id').replace(/btn/, '');
     $('audio[id^="audio"]')[id-1].play();
   });
-
-  // if (Modernizr.touch){
-  //   $('sup').css('display': 'none');
-  //
-  // };
-
 });
 
 function removeTransition(e) {
@@ -28,7 +20,6 @@ function playSound(e) {
   var icon = $(`.xwing-icon[data-key="${e.keyCode}"]`);
 
   var target = $(this).data('key');
-
 
   if (!audio) return;
 

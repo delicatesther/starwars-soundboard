@@ -23,9 +23,9 @@ gulp.task('css', function() {
   return gulp.src(paths.sass.src + '*.scss')
   .pipe(sourcemaps.init())
   .pipe(sass({
-    sourceComments: true,                  // comment out for final delivery
-    sourceMap: '/' + paths.sass.src,       // comment out for final delivery
-    outputStyle: 'expanded'                //"compressed" for final delivery
+    // sourceComments: true,                  // comment out for final delivery
+    // sourceMap: '/' + paths.sass.src,       // comment out for final delivery
+    outputStyle: 'compressed'                //"compressed" for final delivery
   }).on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
