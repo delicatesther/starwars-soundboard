@@ -31,7 +31,7 @@ gulp.task('css', function() {
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(sourcemaps.write('./'))
+  // .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest(paths.sass.dest))
 });
 
@@ -159,9 +159,6 @@ gulp.task('build', function(callback) {
 
   gulp.src("src/index.html")
   .pipe(gulp.dest("dest"))
-
-  gulp.src(paths.css.src + "/vendor/**.*")
-  .pipe(gulp.dest(paths.css.dest + "/vendor/"))
 
   gulp.src(paths.fonts.src + "**.*")
   .pipe(gulp.dest(paths.fonts.dest))

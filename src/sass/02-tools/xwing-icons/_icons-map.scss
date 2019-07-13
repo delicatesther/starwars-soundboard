@@ -2,6 +2,8 @@ $icons-map: (
         agility: "\005e",
         astromech: "\0041",
         attack-180: "\003e",
+        attack-bullseye: "\003f",
+        attack-bullseye-top-separated: "\2019",
         attack-frontback: "\003c",
         attack-turret: "\0024",
         attack: "\0025",
@@ -18,6 +20,8 @@ $icons-map: (
         coordinate: "\006f",
         crew: "\0057",
         crit: "\0063",
+        dalan-bankleft: "\005b",
+        dalan-bankright: "\005d",
         elite: "\0045",
         empire: "\0040",
         energy: "\0028",
@@ -81,6 +85,7 @@ $icons-map: (
         rebel: "\0021",
         recover: "\0076",
         reinforce: "\0069",
+        reload: "\003d",
         reversebankleft: "\004a",
         reversebankright: "\004c",
         reversestraight: "\004b",
@@ -134,4 +139,5 @@ $icons-map: (
         turnright: "\0036",
         turret: "\0055",
         unique: "\0075",
-);
+        unique-outline: "\2022"
+)

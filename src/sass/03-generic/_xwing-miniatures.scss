@@ -1,17 +1,11 @@
-@import "icons-mixin";
-@import "ships-mixin";
+@import "../02-tools/xwing-icons/icons-mixin";
+@import "../02-tools/xwing-icons/ships-mixin";
 
 /*
  * Icons
  */
-
-@font-face {
-  font-family: XWing;
-  src: url('../fonts/xwing-miniatures.ttf');
-}
-
 i.xwing-miniatures-font {
-  font-family: XWing;
+  font-family: 'XWing';
   font-style: normal;
   font-size: 1.5em;
 }
@@ -26,13 +20,8 @@ i.xwing-miniatures-font {
  * Ships
  */
 
-@font-face {
-  font-family: XWingShip;
-  src: url('../fonts/xwing-miniatures-ships.ttf');
-}
-
 i.xwing-miniatures-ship {
-  font-family: XWingShip;
+  font-family: 'XWingShip';
   font-style: normal;
   font-size: 1.5em;
 }
